@@ -2,203 +2,36 @@
 <html lang="en">
 
 <head>
+    <!-- Meta and Title Section: Contains meta tags, title, and font links -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aliza - Developer Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700& display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 70px;
-            background-color: rgb(18, 18, 62);
-            ;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(158, 158, 220);
-            font-size: 1.02rem;
-        }
-
-        main hr {
-            border: 0;
-            background: #9c97f1;
-            height: 1.2px;
-            margin: 60px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 130px 0;
-        }
-
-        .firstSection>div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 2rem;
-
-        }
-
-        .leftSection .btn {
-            padding: 12px;
-            background-color: #1e2167;
-            color: white;
-            border: 2px solid white;
-            font-size: 20px;
-            cursor: pointer;
-
-        }
-
-        .rightSection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: rgb(170, 107, 228);
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(170, 107, 228);
-        }
-
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondSection h1 {
-            font-size: 1.9rem;
-        }
-
-        .secondSection .box {
-            background: white;
-            width: 80vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondSection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 100px;
-        }
-
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -23px;
-            left: -9px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
-
-        footer {
-            background-color: #0e0e1a;
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 223px;
-        }
-
-        footer .footer-rights {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Header Section: Navigation menu for different sections of the portfolio -->
     <header>
         <nav>
             <div class="left">Aliza's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li> <!-- Updated href for Home -->
+                    <li><a href="#about">About</a></li> <!-- Updated href for About -->
+                    <li><a href="#services">Services</a></li> <!-- Updated href for Services -->
+                    <li><a href="#projects">Projects</a></li> <!-- Updated href for Projects -->
+                    <li><a href="#contact">Contact Me</a></li> <!-- Updated href for Contact -->
                 </ul>
             </div>
         </nav>
     </header>
 
+    <!-- Main Section: Introduction and animated text for portfolio highlights -->
     <main>
         <section class="firstSection">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Aliza</span>
-
                 <div>and I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
@@ -211,6 +44,8 @@
             </div>
         </section>
         <hr>
+
+        <!-- Work Experience Section: Timeline-style layout for displaying work history -->
         <section class="secondSection">
             <span class="text-gray">What I have done so far</span>
             <h1>Work Experience</h1>
@@ -218,63 +53,65 @@
             <div class="box">
                 <div class="vertical">
                     <img class="image-top" src="developer1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2020-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex pariatur voluptates
-                        blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et autem illum mollitia
-                        delectus iste. Debitis fugiat facilis natus?
-                    </div>
+                    <div class="vertical-title">HTML Developer (2020-2022)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex
+                        pariatur voluptates blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et
+                        autem illum mollitia delectus iste. Debitis fugiat facilis natus?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2020-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex pariatur voluptates
-                        blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et autem illum mollitia
-                        delectus iste. Debitis fugiat facilis natus?
-                    </div>
+                    <div class="vertical-title">HTML Developer (2020-2022)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex
+                        pariatur voluptates blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et
+                        autem illum mollitia delectus iste. Debitis fugiat facilis natus?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2020-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex pariatur voluptates
-                        blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et autem illum mollitia
-                        delectus iste. Debitis fugiat facilis natus?
-                    </div>
+                    <div class="vertical-title">HTML Developer (2020-2022)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex
+                        pariatur voluptates blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et
+                        autem illum mollitia delectus iste. Debitis fugiat facilis natus?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2020-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex pariatur voluptates
-                        blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et autem illum mollitia
-                        delectus iste. Debitis fugiat facilis natus?
-                    </div>
+                    <div class="vertical-title">HTML Developer (2020-2022)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex
+                        pariatur voluptates blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et
+                        autem illum mollitia delectus iste. Debitis fugiat facilis natus?</div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="developer1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer (2020-2022)
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex pariatur voluptates
-                        blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et autem illum mollitia
-                        delectus iste. Debitis fugiat facilis natus?
-                    </div>
+                    <div class="vertical-title">HTML Developer (2020-2022)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex
+                        pariatur voluptates blanditiis quasi delectus nulla laboriosam perferendis! Nostrum impedit et
+                        autem illum mollitia delectus iste. Debitis fugiat facilis natus?</div>
                 </div>
             </div>
         </section>
+        <!-- Add this section after your secondSection (Work Experience Section) -->
+        <!-- Updated About Section -->
+        <section id="about" class="about-section">
+            <h1>About Me</h1>
+            <p>
+                A recent Software Engineering graduate with a strong background in Python, awarded a 100% merit
+                scholarship throughout my degree for academic excellence.
+            </p>
+            <p>
+                Worked as a Freelance Software Developer during my studies, successfully collaborating with over 15
+                global clients. Delivered web applications and software solutions, gaining hands-on experience in
+                solving real-world, complex problems, while consistently receiving exceptional feedback for the quality
+                of work delivered.
+            </p>
+            <p>
+                Eager to apply these skills and contribute to a forward-thinking company while continuing my
+                professional growth.
+            </p>
+        </section>
+
 
     </main>
+
+    <!-- Footer Section: Navigation links and copyright information -->
     <footer>
         <div class="footer">
             <div class="footer-first">
@@ -286,24 +123,13 @@
                     <li>Home</li>
                 </ul>
             </div>
-            <div class="footer-third"></div>
-            <div class="footer-fourth"></div>
-            <div class="footer-rights"></div>
-            Copyright &#169;www.alizaPortfolio.com | All rights reserved
-        </div>
+            <div class="footer-rights">Copyright &#169;www.alizaPortfolio.com | All rights reserved</div>
         </div>
     </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Full-Stack Developer', 'Data Analyst', 'Technical Writer', 'Wordpress Developer', 'AI Enthusiast'],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: true,
-            showCursor: true
-        });
-    </script>
+
+    <!-- Script Section: Typed.js library for animated text in the introduction -->
+    <script src="https://unpkg.com/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
