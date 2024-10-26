@@ -63,13 +63,47 @@ main hr {
     font-size: 2rem;
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+    /* Space between buttons */
+    margin-top: 20px;
+    /* Space above the buttons */
+}
+
 .leftSection .btn {
-    padding: 12px;
+    padding: 12px 25px;
+    /* Adequate padding */
     background-color: #1e2167;
+    /* Button color */
     color: white;
-    border: 2px solid white;
-    font-size: 20px;
-    cursor: pointer;
+    /* Text color */
+    border: none;
+    /* No border */
+    border-radius: 25px;
+    /* Fully rounded corners */
+    font-size: 18px;
+    /* Font size */
+    text-decoration: none;
+    /* No underline for links */
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition */
+    display: inline-block;
+    /* Ensure the buttons can be styled correctly */
+}
+
+/* Hover effect */
+.leftSection .btn:hover {
+    background-color: #3a3d98;
+    /* Darker color on hover */
+    transform: translateY(-2px);
+    /* Lift effect on hover */
+}
+
+
+.leftSection .btn:active {
+    transform: translateY(0);
+    /* Reset lift on click */
 }
 
 .rightSection img {
@@ -91,65 +125,233 @@ main hr {
 .secondSection {
     max-width: 80vw;
     margin: auto;
-    height: 80vh;
+    background-color: white;
+    /* Set background color to white */
+    padding: 20px;
+    /* Add padding for spacing */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: subtle shadow for depth */
 }
 
 .secondSection h1 {
     font-size: 1.9rem;
+    color: #333;
+    /* Dark gray color for the main heading */
 }
 
 .secondSection .box {
-    background: white;
-    width: 80vw;
-    height: 2px;
-    margin: 56px 0;
     display: flex;
+    flex-direction: column;
+    /* Change layout to column */
+    gap: 30px;
+    /* Spacing between each experience box */
+    width: 100%;
+    margin: 20px 0;
 }
 
 .secondSection .vertical {
-    height: 93px;
-    width: 1px;
-    background-color: white;
-    margin: 0 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f9f9f9;
+    /* Light gray background for each experience entry */
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    /* Dark gray color for the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-top {
-    width: 23px;
-    position: relative;
-    top: -23px;
-    left: -9px;
+    width: 50px;
+    /* Increase size for better visibility */
+    height: auto;
+    border-radius: 50%;
+    /* Optional: circle image */
 }
 
 .vertical-title {
-    position: relative;
-    top: 75px;
-    width: 150px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    /* Set job title color to black */
 }
 
 .vertical-desc {
-    position: relative;
-    top: 86px;
-    color: gray;
-    width: 150px;
-    font-size: 9px;
+    color: #555;
+    /* Dark gray color for the description */
+    font-size: 14px;
 }
+
+
 .about-section {
     max-width: 80vw;
     margin: auto;
     padding: 60px 0;
     color: white;
-    text-align: center; /* Centering the text */
+    text-align: center;
+    /* Centering the text */
 }
 
 .about-section h1 {
     font-size: 2rem;
-    margin-bottom: 20px; /* Adding some space below the title */
+    margin-bottom: 20px;
+    /* Adding some space below the title */
 }
 
 .about-section p {
     font-size: 1.1rem;
-    margin: 10px 0; /* Adding space between paragraphs */
+    margin: 10px 0;
+    /* Adding space between paragraphs */
+}
+
+/* Services Section */
+#services {
+    background-color: #f9fafc;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.services-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Fade-in effect for service cards */
+.service-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.service-card.fade-in {
+    opacity: 1;
+}
+
+/* Reset some styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section Styling */
+.about-section,
+.secondSection {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background for readability */
+}
+
+.text-gray {
+    color: lightgray;
+}
+
+/* Additional Styling */
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0 0 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vertical-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.vertical-desc {
+    font-size: 1rem;
+}
+
+.image-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 
