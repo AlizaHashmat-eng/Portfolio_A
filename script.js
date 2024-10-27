@@ -34,4 +34,5 @@ window.addEventListener('scroll', function () {
         }
     });
 });
+<script src="../script.js" defer></script>
 
